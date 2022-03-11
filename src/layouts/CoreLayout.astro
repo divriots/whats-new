@@ -1,0 +1,60 @@
+---
+import path from 'node:path';
+import MainHead from '../components/MainHead.astro';
+import { sortGroupContent } from '../utils/sortGroupContent.js'
+import './core-layout.css';
+
+const markdownFiles = Astro.fetchContent('../pages/*/*.md');
+const groupedObj = sortGroupContent(markdownFiles);
+
+const pathName = Astro.request.url.pathname.replace(/^\//g, '');
+const firstFilePathName = Astro.props.firstFileUrl?.replace(/^\//g, '');
+const currentFile = pathName ? pathName : firstFilePathName;
+const currentCollection = path.dirname(currentFile);
+const groupedEntries = Object.entries(groupedObj);
+const groupedEntriesWithoutCurrent = groupedEntries.filter(([key]) =>
+  currentCollection !== key
+);
+const currentGroupIndex = groupedEntries.findIndex(([key]) =>
+  currentCollection === key
+);
+---
+<html lang="en">
+  <head>
+  <MainHead />
+  </head>
+  <body>
+    <aside class="aside">
+      <div class="aside__content">
+        <h1>What's new</h1>
+        <nav>
+          <ul>
+            {groupedObj[currentCollection].map(file =>
+              <li>
+                <a active={`/${currentFile}` === `${file.url}`} href={file.url}>{file.title}</a>
+              </li>
+            )}
+          </ul>
+        </nav>
+      </div>
+      <div class="paginate">
+        <p class="paginate__current">{groupedEntries[currentGroupIndex][0]}</p>
+        <div class="paginate__anchors">
+          {groupedEntries.length - 1 > currentGroupIndex ? <a
+            href={
+              groupedEntries[currentGroupIndex + 1][1][0].url
+            }
+          >Previous</a> : <span></span>}
+          {currentGroupIndex > 0 ? <a
+            href={
+              groupedEntries[currentGroupIndex - 1][1][0].url
+            }
+          >Next</a> : <span></span>}
+        </div>
+      </div>
+    </aside>
+    <main class="main">
+      <slot />
+    </main>
+  </body>
+</html>

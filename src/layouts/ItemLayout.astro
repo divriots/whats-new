@@ -1,0 +1,26 @@
+---
+import CoreLayout from '../layouts/CoreLayout.astro';
+import './item-layout.css';
+
+const props =  { ...Astro.props.content, ...Astro.props.fileToDisplay } ;
+---
+<script hoist type="module">
+  import '@divriots/rev/button/index.js';
+</script>
+<CoreLayout firstFileUrl={props.url}>
+  <div class="wrapper">
+    <img src={props.hero} alt="hero image of update" />
+    <div class="content">
+
+      <div class="content__container">
+        <h2>{props.title}</h2>
+        <slot />
+      </div>
+      <a class="content__cta" href={props.cta.href}>
+        <rev-button>
+          {props.cta.label}
+        </rev-button>
+      </a>
+    </div>
+  </div>
+</CoreLayout>

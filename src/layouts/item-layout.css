@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wrapper img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.content {
+  padding: var(--rev-spacing-s12);
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.content__container {
+  flex-grow: 1;
+}
+
+.content__cta rev-button:not(:defined) {
+  display: none;
+}

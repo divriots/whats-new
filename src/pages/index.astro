@@ -1,0 +1,13 @@
+---
+import path from 'node:path';
+import { Markdown } from 'astro/components';
+import ItemLayout from '../layouts/ItemLayout.astro';
+import { sortGroupContent, getFirstFile } from '../utils/index.js';
+
+const markdownFiles = Astro.fetchContent('./*/*.md');
+const groupedObj = sortGroupContent(markdownFiles);
+const fileToDisplay = getFirstFile(groupedObj);
+---
+<ItemLayout fileToDisplay={fileToDisplay}>
+<Markdown>{fileToDisplay.content.source}</Markdown>
+</ItemLayout>
