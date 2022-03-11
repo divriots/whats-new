@@ -21,7 +21,10 @@ const currentGroupIndex = groupedEntries.findIndex(([key]) =>
 ---
 <html lang="en">
   <head>
-  <MainHead />
+    <MainHead />
+    <script hoist type="module">
+      import '@divriots/rev/button/index.js';
+    </script>
   </head>
   <body>
     <aside class="aside">
@@ -29,7 +32,7 @@ const currentGroupIndex = groupedEntries.findIndex(([key]) =>
         <h1>What's new</h1>
         <nav>
           <ul>
-            {groupedObj[currentCollection].map(file =>
+            {groupedObj[currentCollection]?.map(file =>
               <li>
                 <a active={`/${currentFile}` === `${file.url}`} href={file.url}>{file.title}</a>
               </li>
@@ -37,21 +40,23 @@ const currentGroupIndex = groupedEntries.findIndex(([key]) =>
           </ul>
         </nav>
       </div>
-      <div class="paginate">
-        <p class="paginate__current">{groupedEntries[currentGroupIndex][0]}</p>
-        <div class="paginate__anchors">
-          {groupedEntries.length - 1 > currentGroupIndex ? <a
-            href={
-              groupedEntries[currentGroupIndex + 1][1][0].url
-            }
-          >Previous</a> : <span></span>}
-          {currentGroupIndex > 0 ? <a
-            href={
-              groupedEntries[currentGroupIndex - 1][1][0].url
-            }
-          >Next</a> : <span></span>}
+      {currentGroupIndex > -1 ?
+        <div class="paginate">
+          <p class="paginate__current">{groupedEntries[currentGroupIndex][0]}</p>
+          <div class="paginate__anchors">
+            {groupedEntries.length - 1 > currentGroupIndex ? <a
+              href={
+                groupedEntries[currentGroupIndex + 1][1][0].url
+              }
+            ><rev-button tab-index="-1" variation="secondary">Previous</rev-button></a> : <span></span>}
+            {currentGroupIndex > 0 ? <a
+              href={
+                groupedEntries[currentGroupIndex - 1][1][0].url
+              }
+            ><rev-button tab-index="-1" variation="secondary">Next</rev-button></a> : <span></span>}
+          </div>
         </div>
-      </div>
+        : ''}
     </aside>
     <main class="main">
       <slot />

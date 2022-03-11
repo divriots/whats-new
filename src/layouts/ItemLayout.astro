@@ -4,6 +4,9 @@ import './item-layout.css';
 
 const props =  { ...Astro.props.content, ...Astro.props.fileToDisplay } ;
 ---
+<!-- Don't remove this style tag, otherwise item-layout.css
+isn't properly loaded on build >:( for some reason... -->
+<style></style>
 <script hoist type="module">
   import '@divriots/rev/button/index.js';
 </script>
@@ -17,7 +20,7 @@ const props =  { ...Astro.props.content, ...Astro.props.fileToDisplay } ;
         <slot />
       </div>
       <a class="content__cta" href={props.cta.href}>
-        <rev-button>
+        <rev-button tab-index="-1">
           {props.cta.label}
         </rev-button>
       </a>
