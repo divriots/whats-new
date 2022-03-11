@@ -9,4 +9,4 @@ cta:
 hero_image: "/images/melons.jpeg"
 
 ---
-Placeholder text. Foooooooo.
+Placeholder text.

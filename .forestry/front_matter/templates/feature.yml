@@ -32,7 +32,7 @@ fields:
   - name: href
     type: text
     config:
-      required: true
+      required: false
     label: Link
     description: The link for the Call to Action button
   - name: label
