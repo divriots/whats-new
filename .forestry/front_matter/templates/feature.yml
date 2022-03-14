@@ -50,3 +50,6 @@ fields:
   label: Layout
   hidden: true
   default: "../../layouts/ItemLayout.astro"
+pages:
+- src/pages/2022-04-01/joe1.md
+- src/pages/2022-06-18/joe.md
