@@ -25,6 +25,25 @@ const currentGroupIndex = groupedEntries.findIndex(([key]) =>
     <script hoist type="module">
       import '@divriots/rev/button/index.js';
     </script>
+    <script>
+      window.addEventListener("message", (ev) => {
+        if (ev.data === 'get-release-date') {
+          dispatchReleaseDate(ev);
+        }
+      });
+
+      function dispatchReleaseDate(ev) {
+        const { source } = ev;
+        const releaseDate = document.getElementById('current-release-date').innerText;
+        source.postMessage(
+          {
+            type: "release-date",
+            releaseDate,
+          },
+          "*"
+        );
+      }
+    </script>
   </head>
   <body>
     <aside class="aside">
@@ -42,7 +61,8 @@ const currentGroupIndex = groupedEntries.findIndex(([key]) =>
       </div>
       {currentGroupIndex > -1 ?
         <div class="paginate">
-          <p class="paginate__current">{groupedEntries[currentGroupIndex][0]}</p>
+          <!-- if you edit this id, make sure to also adjust the postMessage script in the <head> -->
+          <p id="current-release-date" class="paginate__current">{groupedEntries[currentGroupIndex][0]}</p>
           <div class="paginate__anchors">
             {groupedEntries.length - 1 > currentGroupIndex ? <a
               href={
