@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "prd-designsystems"
+  },
+  "targets": {
+    "prd-designsystems": {
+      "hosting": {
+        "whatsnew": [
+          "prd-whatsnew-designsystems"
+        ]
+      }
+    }
+  }
+}
