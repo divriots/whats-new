@@ -1,0 +1,21 @@
+{
+  "hosting": [
+    {
+      "target": "whatsnew",
+      "cleanUrls": true,
+      "public": "dist",
+      "headers": [
+        {
+          "$description$": "Images, icons and stuff, no big deal if served stale",
+          "source": "(assets|images)/**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public,max-age=86400"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
