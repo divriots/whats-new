@@ -9,4 +9,4 @@ cta:
 hero_image: "/images/melons.jpeg"
 
 ---
-Placeholder text.
+Improved performance and error handling: now old and redundant output files are cleaned automatically.
