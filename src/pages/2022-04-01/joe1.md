@@ -1,8 +1,8 @@
 ---
-order: 3
+order: 1
 layout: "../../layouts/ItemLayout.astro"
-title: joe1
-hero_image: ''
+title: New Style Dictionary starter
+hero_image: "/images/unknown.png"
 cta:
   href: ''
   label: ''
