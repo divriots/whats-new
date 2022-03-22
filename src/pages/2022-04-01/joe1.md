@@ -8,3 +8,4 @@ cta:
   label: Take a look
 
 ---
+New Style-Dictionary starter kit for those who want to get started using Design Tokens in their design system.
