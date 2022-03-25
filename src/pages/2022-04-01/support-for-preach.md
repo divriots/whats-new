@@ -1,0 +1,11 @@
+---
+order: 4
+layout: "../../layouts/ItemLayout.astro"
+title: preact now supported
+hero_image: ''
+cta:
+  href: https://backlight.dev/docs/preact
+  label: Learn more
+
+---
+Preact is a fast 3kB alternative to React with the same modern API.
