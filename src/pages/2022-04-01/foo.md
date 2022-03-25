@@ -9,7 +9,4 @@ cta:
 hero_image: "/images/melons.jpeg"
 
 ---
-
 Use Svelte in Markdown thanks to mdsvex to write your components live documentation seamlessly
-
-👇
