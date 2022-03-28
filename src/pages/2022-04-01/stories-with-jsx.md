@@ -1,11 +1,11 @@
 ---
 order: 5
 layout: "../../layouts/ItemLayout.astro"
-title: Stories with JSX
+title: JSX now supported within stories
 hero_image: ''
 cta:
   href: ''
   label: ''
 
 ---
-Backlight now supports Storybook Stories with JSX
+JSX coupled with React is used to describe what the UI should look like making the code more digest.
