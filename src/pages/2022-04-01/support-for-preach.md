@@ -2,7 +2,7 @@
 order: 4
 layout: "../../layouts/ItemLayout.astro"
 title: preact now supported
-hero_image: ''
+hero_image: "/images/preact-supported.jpg"
 cta:
   href: https://backlight.dev/docs/preact
   label: Learn more
