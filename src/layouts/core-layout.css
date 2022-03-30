@@ -25,15 +25,13 @@ h1 {
 }
 
 .main {
-  max-width: 75%;
-  flex-grow: 3;
+  width: 70%;
 }
 
 .aside {
   overflow-wrap: anywhere;
   display: flex;
-  max-width: 25%;
-  flex-grow: 1;
+  width: calc(30% - 2 * var(--rev-spacing-s12));
   flex-direction: column;
   padding: var(--rev-spacing-s12);
   background-color: var(--rev-colors-bg-highlight);
@@ -42,7 +40,7 @@ h1 {
 @media (max-width: 720px) {
   .main,
   .aside {
-    max-width: 100%;
+    width: 100%;
   }
   .aside {
     flex-grow: 0;

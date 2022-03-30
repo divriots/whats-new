@@ -5,7 +5,8 @@
 }
 
 .wrapper img {
-  height: 300px;
+  aspect-ratio: 3 / 1;
+  object-position: center;
   object-fit: cover;
 }
 
