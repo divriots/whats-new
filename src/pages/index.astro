@@ -5,8 +5,8 @@ import ItemLayout from '../layouts/ItemLayout.astro';
 import { sortGroupContent, getFirstFile } from '../utils/index.js';
 
 const markdownFiles = Astro.fetchContent('./*/*.md');
-const groupedObj = sortGroupContent(markdownFiles);
-const fileToDisplay = getFirstFile(groupedObj);
+const { groupedObjWithoutNext } = sortGroupContent(markdownFiles);
+const fileToDisplay = getFirstFile(groupedObjWithoutNext);
 ---
 <ItemLayout fileToDisplay={fileToDisplay}>
 <Markdown>{fileToDisplay.content.source}</Markdown>

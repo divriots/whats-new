@@ -5,13 +5,13 @@ import { sortGroupContent } from '../utils/sortGroupContent.js'
 import './core-layout.css';
 
 const markdownFiles = Astro.fetchContent('../pages/*/*.md');
-const groupedObj = sortGroupContent(markdownFiles);
+const { groupedObj, groupedObjWithoutNext } = sortGroupContent(markdownFiles);
 
 const pathName = Astro.request.url.pathname.replace(/^\//g, '');
 const firstFilePathName = Astro.props.firstFileUrl?.replace(/^\//g, '');
 const currentFile = pathName ? pathName : firstFilePathName;
 const currentCollection = path.dirname(currentFile);
-const groupedEntries = Object.entries(groupedObj);
+const groupedEntries = Object.entries(groupedObjWithoutNext);
 const groupedEntriesWithoutCurrent = groupedEntries.filter(([key]) =>
   currentCollection !== key
 );
