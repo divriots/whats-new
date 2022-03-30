@@ -51,10 +51,6 @@ fields:
   hidden: true
   default: "../../layouts/ItemLayout.astro"
 pages:
-- src/pages/2022-04-01/documentation-in-mdx-2-now-supported.md
-- src/pages/2022-04-01/joe1.md
-- src/pages/2022-04-01/stories-with-jsx.md
-- src/pages/2022-04-01/support-for-preach.md
 - src/pages/2022-06-18/joe.md
 - src/pages/February/feature-1.md
 - src/pages/January/feature-1.md
