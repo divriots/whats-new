@@ -2,7 +2,7 @@
 order: 5
 layout: "../../layouts/ItemLayout.astro"
 title: JSX now supported within stories
-hero_image: ''
+hero_image: "/images/screen-shot-2022-03-30-at-16-08-37.png"
 cta:
   href: ''
   label: ''
