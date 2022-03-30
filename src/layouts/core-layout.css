@@ -3,7 +3,8 @@ body {
   background-color: var(--rev-colors-misc-darkest);
   color: var(--rev-colors-text-base);
   font-family: "Space Grotesk", sans-serif;
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 body {
@@ -26,10 +27,12 @@ h1 {
 
 .main {
   width: 70%;
+  overflow-y: auto;
 }
 
 .aside {
   overflow-wrap: anywhere;
+  overflow-y: auto;
   display: flex;
   width: calc(30% - 2 * var(--rev-spacing-s12));
   flex-direction: column;
@@ -44,6 +47,7 @@ h1 {
   }
   .aside {
     flex-grow: 0;
+    max-height: 200px;
     padding: var(--rev-spacing-s4);
   }
 }
