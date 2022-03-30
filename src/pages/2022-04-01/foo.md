@@ -2,7 +2,6 @@
 order: 2
 title: Svelte support in the documentation
 layout: "../../layouts/ItemLayout.astro"
-hero: "/images/melons.jpeg"
 cta:
   href: https://backlight.dev/docs/svelte
   label: Learn more
