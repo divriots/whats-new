@@ -8,8 +8,6 @@ cta:
 hero_image: "/images/style-dictionary-improvment.jpg"
 
 ---
-\- Improved performance
-
-\- Better error handling
-
-\- Old and redundant output files are cleaned automatically
+* Improved performance
+* Better error handling
+* Old and redundant output files are cleaned automatically
