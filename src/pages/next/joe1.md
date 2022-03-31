@@ -1,7 +1,7 @@
 ---
 order: 1
 layout: "../../layouts/ItemLayout.astro"
-title: New Style Dictionary starter
+title: New Style Dictionary starter kit
 hero_image: "/images/sd-stater.jpg"
 cta:
   href: https://backlight.dev/edit/RadUTqBDyFX8ZDiIWlhd/
