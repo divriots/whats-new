@@ -1,11 +1,14 @@
 ---
 order: 4
 layout: "../../layouts/ItemLayout.astro"
-title: Preact now supported
+title: Improved Preact support
 hero_image: "/images/preact-supported.jpg"
 cta:
   href: https://backlight.dev/docs/preact
-  label: Learn more
+  label: Read more
 
 ---
-Preact is a fast 3kB alternative to React with the same modern API.
+Backlight extended the support for [Preact](https://preactjs.com)
+
+* JSX Stories
+* `preact/compat` support via new aliases
