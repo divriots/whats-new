@@ -43,7 +43,7 @@ h1 {
 @media (max-width: 720px) {
   .main,
   .aside {
-    width: 100%;
+    width: auto;
   }
   .aside {
     flex-grow: 0;
