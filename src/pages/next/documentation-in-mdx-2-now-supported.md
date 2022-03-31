@@ -2,7 +2,7 @@
 order: 6
 layout: "../../layouts/ItemLayout.astro"
 title: Documentation in MDX 2 now supported
-hero_image: ''
+hero_image: "/images/mdx2.jpg"
 cta:
   href: https://backlight.dev/docs/mdx
   label: Learn more
