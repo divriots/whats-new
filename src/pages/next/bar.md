@@ -4,7 +4,7 @@ title: Improved Style Dictionary integration
 layout: "../../layouts/ItemLayout.astro"
 cta:
   href: https://backlight.dev/docs/style-dictionary
-  label: Learn more
+  label: Read more
 hero_image: "/images/style-dictionary-improvment.jpg"
 
 ---
