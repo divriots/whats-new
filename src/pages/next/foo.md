@@ -8,4 +8,4 @@ cta:
 hero_image: "/images/svelte-supported.jpg"
 
 ---
-You can now use Svelte in Markdown thanks to mdsvex to write your components live documentation seamlessly.
+You can now use Svelte in Markdown. Thanks to mdsvex you can write your components' live documentation seamlessly.
