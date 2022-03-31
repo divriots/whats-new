@@ -8,4 +8,4 @@ cta:
   label: Learn more
 
 ---
-Backlight now supports documentation in MDX 2
+Improved syntax, compiles faster, 250% smaller bundle size, #JavaScript expressions, and much more!
