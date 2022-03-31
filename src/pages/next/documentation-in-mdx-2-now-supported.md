@@ -5,7 +5,7 @@ title: Documentation in MDX 2 now supported
 hero_image: "/images/mdx2.jpg"
 cta:
   href: https://backlight.dev/docs/mdx
-  label: Learn more
+  label: Read more
 
 ---
 Improved syntax, compiles faster, 250% smaller bundle size, #JavaScript expressions, and much more!
