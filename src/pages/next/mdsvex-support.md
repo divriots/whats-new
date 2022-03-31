@@ -2,7 +2,7 @@
 order: 6
 layout: "../../layouts/ItemLayout.astro"
 title: MDsveX support
-hero_image: ''
+hero_image: "/images/mdsvex.jpg"
 cta:
   href: https://backlight.dev/docs/mdsvex
   label: Read more
