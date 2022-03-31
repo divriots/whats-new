@@ -8,4 +8,4 @@ cta:
   label: Learn more
 
 ---
-JSX coupled with React is used to describe what the UI should look like making the code more digest.
+JSX coupled with React is used to describe what the UI should look like making the code easier to digest.
