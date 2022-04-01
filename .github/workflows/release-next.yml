@@ -16,7 +16,7 @@ jobs:
 
       - name: Rename Next to Now
         run: |
-          mv src/pages/next src/pages/${{RELEASE_DATE}}
+          mv src/pages/next src/pages/${{env.RELEASE_DATE}}
 
       - name: Remake Next Dir
         run: |
