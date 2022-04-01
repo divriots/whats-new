@@ -1,0 +1,35 @@
+name: Release Next
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Set release date
+        run: |
+          echo "RELEASE_DATE=$(date --rfc-3339=date)" >> $GITHUB_ENV
+
+      - name: Rename Next to Now
+        run: |
+          mv src/pages/next src/pages/${{RELEASE_DATE}}
+
+      - name: Remake Next Dir
+        run: |
+          mkdir src/pages/next
+
+      - name: Test
+        run: |
+          ls src/pages/next && ls src/pages && ls src/pages/2022-04-01
+
+      # - name: Commit changes
+      #   uses: EndBug/add-and-commit@v9
+      #   with:
+      #     author_name: Joren Broekema
+      #     author_email: joren.broekema@gmail.com
+      #     message: 'chore: release'
+      #     add: '.'
