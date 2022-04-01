@@ -19,7 +19,7 @@ isn't properly loaded on build >:( for some reason... -->
         <h2>{props.title}</h2>
         <slot />
       </div>
-      <a class="content__cta" href={props.cta.href}>
+      <a class="content__cta" target="_blank" href={props.cta.href}>
         <rev-button tab-index="-1">
           {props.cta.label}
         </rev-button>

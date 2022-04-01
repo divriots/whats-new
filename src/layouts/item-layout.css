@@ -24,3 +24,7 @@
 .content__cta rev-button:not(:defined) {
   display: none;
 }
+
+a {
+  color: var(--rev-colors-accent-base);
+}
