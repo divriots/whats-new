@@ -26,10 +26,10 @@ jobs:
         run: |
           ls src/pages/next && ls src/pages && ls src/pages/2022-04-01
 
-      # - name: Commit changes
-      #   uses: EndBug/add-and-commit@v9
-      #   with:
-      #     author_name: Joren Broekema
-      #     author_email: joren.broekema@gmail.com
-      #     message: 'chore: release'
-      #     add: '.'
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Joren Broekema
+          author_email: joren.broekema@gmail.com
+          message: 'chore: release'
+          add: '.'
