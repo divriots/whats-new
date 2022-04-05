@@ -18,6 +18,9 @@ const groupedEntriesWithoutCurrent = groupedEntries.filter(([key]) =>
 const currentGroupIndex = groupedEntries.findIndex(([key]) =>
   currentCollection === key
 );
+
+const date = new Date(groupedEntries[currentGroupIndex][0]);
+const subtitle = `in ${Intl.DateTimeFormat('en-GB', { month: 'long' }).format(date)} ${date.getFullYear()}`;
 ---
 <html lang="en">
   <head>
@@ -49,6 +52,7 @@ const currentGroupIndex = groupedEntries.findIndex(([key]) =>
     <aside class="aside">
       <div class="aside__content">
         <h1>What's new</h1>
+        <h2 class="subtitle">{subtitle}</h2>
         <nav>
           <ul>
             {groupedObj[currentCollection]?.map(file =>
