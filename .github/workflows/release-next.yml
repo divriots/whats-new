@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@master
+        with:
+          token: ${{ secrets.PAT_JOREN }}
 
       - name: Set release date
         run: |
@@ -20,7 +22,7 @@ jobs:
 
       - name: Remake Next Dir
         run: |
-          mkdir src/pages/next
+          mkdir src/pages/next && touch src/pages/next/.gitkeep
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
