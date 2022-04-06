@@ -27,6 +27,16 @@ const subtitle = `in ${Intl.DateTimeFormat('en-GB', { month: 'long' }).format(da
     <MainHead />
     <script hoist type="module">
       import '@divriots/rev/button/index.js';
+      import mixpanel from 'mixpanel-browser';
+      mixpanel.init('d5dd6fb9188234a5a5c68a1c2457cbd6', {
+        ignore_dnt: true,
+        disable_persistence: true
+      });
+      Array.from(document.querySelectorAll('a')).forEach(anchor => {
+        anchor.addEventListener('click', () => {
+          mixpanel.track('browse-through');
+        })
+      })
     </script>
     <script>
       window.addEventListener("message", (ev) => {

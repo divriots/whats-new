@@ -18,7 +18,8 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "@divriots/rev": "^0.1.15"
+    "@divriots/rev": "^0.1.15",
+    "mixpanel-browser": "^2.45.0"
   },
   "engines": {
     "node": ">=16.0.0"
