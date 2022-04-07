@@ -5,5 +5,5 @@ layout: "../../layouts/ItemLayout.astro"
 cta:
   href: https://backlight.dev/
   label: Read more
-hero_image: "/images/melons.jpg"
+hero_image: "/images/melons.jpeg"
 ---

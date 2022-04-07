@@ -19,7 +19,7 @@ const currentGroupIndex = groupedEntries.findIndex(([key]) =>
   currentCollection === key
 );
 
-const date = new Date(groupedEntries[currentGroupIndex][0]);
+const date = groupedEntries[currentGroupIndex] ? new Date(groupedEntries[currentGroupIndex][0]) : new Date();
 const subtitle = `in ${Intl.DateTimeFormat('en-GB', { month: 'long' }).format(date)} ${date.getFullYear()}`;
 ---
 <html lang="en">
