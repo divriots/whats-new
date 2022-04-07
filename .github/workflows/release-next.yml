@@ -22,7 +22,7 @@ jobs:
 
       - name: Remake Next Dir
         run: |
-          mkdir src/pages/next && touch src/pages/next/.gitkeep
+          mkdir src/pages/next && touch src/pages/next/dummy.md
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
