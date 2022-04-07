@@ -1,0 +1,33 @@
+---
+import { Markdown } from 'astro/components';
+import './item-layout.css';
+import './mobile-layout.css';
+const props =  { ...Astro.props.content, ...Astro.props.groupedContent } ;
+
+const [key,articles] = Object.entries(props)[0];
+console.log(articles[0].content);
+---
+<!-- Don't remove this style tag, otherwise item-layout.css
+isn't properly loaded on build >:( for some reason... -->
+<style></style>
+<script hoist type="module">
+  import '@divriots/rev/button/index.js';
+</script>
+  {articles.map(article =>
+    <div class="wrapper">
+      <img src={article.hero_image} alt="hero image of update" />
+      <div class="content">
+
+        <div class="content__container">
+          <h2>{article.title}</h2>
+          <Markdown>{article.content.source}</Markdown>
+        </div>
+        <a class="content__cta" target="_blank" rel="noopener" href={article.cta.href}>
+          <rev-button tab-index="-1">
+            {article.cta.label}
+          </rev-button>
+        </a>
+      </div>
+    </div>
+  )}
+

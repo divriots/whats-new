@@ -1,0 +1,10 @@
+---
+import path from 'node:path';
+import { Markdown } from 'astro/components';
+import MobileLayout from '../layouts/MobileLayout.astro';
+import { sortGroupContent, getFirstFile } from '../utils/index.js';
+
+const markdownFiles = Astro.fetchContent('./*/*.md');
+const { groupedObjWithoutNext } = sortGroupContent(markdownFiles);
+---
+<MobileLayout groupedContent={groupedObjWithoutNext}></MobileLayout>
