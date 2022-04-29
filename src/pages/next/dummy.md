@@ -1,6 +1,6 @@
 ---
 order: 1
-title: Split View
+title: Split-view
 layout: "../../layouts/ItemLayout.astro"
 cta:
   href: https://studio.backlight.dev/edit/k0DvZztNuwmS6XnXoohE/button/src/button.ts?p=stories
