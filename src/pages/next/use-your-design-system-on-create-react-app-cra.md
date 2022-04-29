@@ -8,3 +8,4 @@ cta:
   label: Learn more
 
 ---
+[Create React App (CRA)](https://github.com/facebook/create-react-app) is a popular way of starting React single-page application, learn how to install and use your design system with it.
