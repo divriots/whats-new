@@ -50,3 +50,5 @@ fields:
   label: Layout
   hidden: true
   default: "../../layouts/ItemLayout.astro"
+pages:
+- src/pages/next/documentation-search.md
