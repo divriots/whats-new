@@ -8,3 +8,4 @@ cta:
   label: Try it
 
 ---
+You can now navigate faster in Backlight documentation using the new search bar.
