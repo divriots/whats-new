@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 1
 layout: "../../layouts/ItemLayout.astro"
 title: story.to.design support
 hero_image: "/images/s2d-support.jpg"
