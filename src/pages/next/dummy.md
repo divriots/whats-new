@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 3
 title: Split-view
 layout: "../../layouts/ItemLayout.astro"
 cta:
