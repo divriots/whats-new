@@ -2,7 +2,7 @@
 order: 2
 layout: "../../layouts/ItemLayout.astro"
 title: Specify app support
-hero_image: "/images/figma-2-code-thumbnail.jpg"
+hero_image: "/images/specify-app-whats-new.jpg"
 cta:
   href: https://backlight.dev/docs/specify
   label: Read more
