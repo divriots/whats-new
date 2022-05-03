@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 6
 layout: "../../layouts/ItemLayout.astro"
 title: Documentation search bar
 hero_image: ''
