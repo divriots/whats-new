@@ -1,5 +1,5 @@
 ---
-order: 6
+order: 2
 layout: "../../layouts/ItemLayout.astro"
 title: Specify app support
 hero_image: "/images/figma-2-code-thumbnail.jpg"
