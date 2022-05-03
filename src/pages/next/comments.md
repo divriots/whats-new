@@ -5,7 +5,7 @@ title: Comments
 hero_image: "/images/comment.jpg"
 cta:
   href: Try in your design system
-  label: https://backlight.dev
+  label: https://studio.backlight.dev/
 
 ---
 Collaboration made easier: use the comment tab available in Code and Preview mode to gather instant feedback.  
