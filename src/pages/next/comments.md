@@ -9,4 +9,4 @@ cta:
 
 ---
 Collaboration made easier: use the comment tab available in Code and Preview mode to gather instant feedback.  
-⚠️ Not available in the Master branch
+⚠️ Not available in the Main branch
