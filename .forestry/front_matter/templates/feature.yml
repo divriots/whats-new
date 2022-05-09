@@ -52,7 +52,6 @@ fields:
   default: "../../layouts/ItemLayout.astro"
 pages:
 - src/pages/next/comments.md
-- src/pages/next/documentation-search.md
 - src/pages/next/new-specify-app-support.md
 - src/pages/next/new-story.to.design-support.md
 - src/pages/next/use-your-design-system-on-create-react-app-cra.md
