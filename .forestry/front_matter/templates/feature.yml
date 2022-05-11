@@ -51,7 +51,6 @@ fields:
   hidden: true
   default: "../../layouts/ItemLayout.astro"
 pages:
-- src/pages/next/comments-1.md
 - src/pages/next/comments.md
 - src/pages/next/new-specify-app-support.md
 - src/pages/next/new-story.to.design-support.md
