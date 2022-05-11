@@ -1,11 +1,9 @@
 ---
-order: 3
-title: Split-view
+order: 1
+title: Dummy
 layout: "../../layouts/ItemLayout.astro"
 cta:
-  href: https://studio.backlight.dev/edit/k0DvZztNuwmS6XnXoohE/button/src/button.ts?p=stories
-  label: Try it
-hero_image: "/images/split-sd.jpg"
-
+  href: https://backlight.dev/
+  label: Read more
+hero_image: "/images/melons.jpeg"
 ---
-Improved efficiency with the new split-view mode available both in Code view and Review view.
