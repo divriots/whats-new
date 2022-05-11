@@ -8,4 +8,4 @@ cta:
   label: Learn more
 
 ---
-Backlight is now supported by[ story.to.design](https://story.to.design). Simply past your Backlight's design system URL into the plugin to generate a Figma UI-kit straight from your design system's stories.
+Backlight is now supported by[ story.to.design](https://story.to.design). Simply paste your Backlight's design system URL into the plugin to generate a Figma UI-kit straight from your design system's stories.
