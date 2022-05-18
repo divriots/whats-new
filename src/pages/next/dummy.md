@@ -8,8 +8,4 @@ cta:
 hero_image: "/images/melons.jpeg"
 
 ---
-Edit preview-story code in the doc site and render it live 🔥
-
-Allows for creation of playground experiences right in your documentation for all rendered code blocks.
-
-See how 👉 
+Edit preview-story code in the doc site and render it live. This allows for creation of playground experiences right in your documentation for all rendered code blocks.
