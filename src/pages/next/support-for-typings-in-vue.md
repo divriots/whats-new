@@ -2,7 +2,7 @@
 order: 2
 layout: "../../layouts/ItemLayout.astro"
 title: Support for typings in Vue
-hero_image: ''
+hero_image: "/images/vuejs.jpg"
 cta:
   href: ''
   label: ''
