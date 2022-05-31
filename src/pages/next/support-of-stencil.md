@@ -2,7 +2,7 @@
 order: 5
 layout: "../../layouts/ItemLayout.astro"
 title: Support of Stencil
-hero_image: ''
+hero_image: "/images/stencil-supported.jpg"
 cta:
   href: https://backlight.dev/docs/stencil#stencil
   label: Read more
