@@ -8,4 +8,4 @@ cta:
   label: read more
 
 ---
-You can now use Vue for your Vue design system documentation.
+Building a Vue design system? We just made your documentation easier: stay in the mindset and use Vue for your documentation to go along. Cherry on the code pie: with layout you can quickly make your documentation easier to digest by adding navigation, logos, and much more
