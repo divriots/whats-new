@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 4
 title: Edit preview-story
 layout: "../../layouts/ItemLayout.astro"
 cta:
