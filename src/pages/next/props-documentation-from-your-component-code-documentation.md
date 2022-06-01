@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 2
 layout: "../../layouts/ItemLayout.astro"
 title: New Prop component in Vue documentation kit
 hero_image: "/images/prop-component.jpg"
