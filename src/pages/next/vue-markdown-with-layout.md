@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 1
 layout: "../../layouts/ItemLayout.astro"
 title: Vue documentation
 hero_image: "/images/vuejs.jpg"
