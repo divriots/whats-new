@@ -8,4 +8,4 @@ cta:
   label: Learn more
 
 ---
-We added a Props component to our documentation kit to automatically generate Props documentation from your component code documentation
+We added a Props component to our documentation kit to automatically generate Props documentation from your component code documentation.
