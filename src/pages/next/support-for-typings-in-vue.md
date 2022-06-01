@@ -8,4 +8,4 @@ cta:
   label: ''
 
 ---
-Autocompletion in VS Code and type checking are now available thanks to the added support of typings in Vue
+Autocompletion in VS Code and type checking are now available thanks to the added support of typings in Vue.
