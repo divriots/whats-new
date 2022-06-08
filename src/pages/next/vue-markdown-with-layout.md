@@ -1,7 +1,7 @@
 ---
 order: 1
 layout: "../../layouts/ItemLayout.astro"
-title: Vue markdown
+title: Improved Vue markdown
 hero_image: "/images/vuejs.jpg"
 cta:
   href: https://backlight.dev/docs/md-vue
