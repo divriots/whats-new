@@ -8,4 +8,4 @@ cta:
   label: Read more
 
 ---
-Added support for Stencil: a toolchain for building reusable, scalable Design Systems. Generate small, blazingly fast, and 100% standards based Web Components that run in every browser.
+Added support for Stencil: a toolchain for building reusable, scalable design systems. Generate small, blazingly fast, and 100% standards based Web Components that run in every browser.
