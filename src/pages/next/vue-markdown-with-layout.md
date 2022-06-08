@@ -4,7 +4,7 @@ layout: "../../layouts/ItemLayout.astro"
 title: Vue markdown
 hero_image: "/images/vuejs.jpg"
 cta:
-  href: https://backlight.dev/docs/md-vue#layout-setup
+  href: https://backlight.dev/docs/md-vue
   label: Read more
 
 ---
