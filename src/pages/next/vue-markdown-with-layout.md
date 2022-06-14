@@ -1,16 +1,16 @@
 ---
 order: 1
 layout: "../../layouts/ItemLayout.astro"
-title: Improved Vue markdown
+title: Improved documentation for Vue design systems
 hero_image: "/images/vuejs.jpg"
 cta:
   href: https://backlight.dev/docs/md-vue
   label: Read more
 
 ---
-We just added layout to our 
+Stay in the mindset and build your doc in Vue with improved support for Vue markdown:
 
-* Design system in Vue? stay in the mindset and build your doc in Vue
-* use the same script tag than SFC 
-
-With layout you can quickly write easy-to-digest documentation by adding navigation, logos, and much more.
+* Use the same script tag for your Javascript as your Vue components.
+* Directly embed Vue components inside your markdown.
+* Documentation compo Props component to automatically generate Props documentation from your component code documentation.
+* Use layout to quickly write easy-to-digest documentation by adding navigation, logos, and more. A ready-to-use layout is now available in our [Vue documentation kit](https://studio.backlight.dev/edit/JwppqaVhCm2NyL9qmkDM/introduction/doc/index.md?p=doc), to benefit from all the above features right out of the box.
