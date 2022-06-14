@@ -8,3 +8,11 @@ cta:
   label: Read more
 
 ---
+Always keep your Figma design tokens and your code in sync thanks to the [Figma Design Token plugin](https://www.figmatokens.com)
+
+* Change token in Figma
+* Push changes
+* Let Github do its magic
+* Code diff review available in Github
+* Visual review available in backlight.dev
+* Profit 🤗
