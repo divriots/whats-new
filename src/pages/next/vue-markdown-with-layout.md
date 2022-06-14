@@ -8,6 +8,9 @@ cta:
   label: Read more
 
 ---
-Building a Vue design system? We just made it easier: stay in the mindset and use Vue for your documentation too.
+We just added layout to our 
 
-Cherry on the code pie: with layout you can quickly write easy-to-digest documentation by adding navigation, logos, and much more.
+* Design system in Vue? stay in the mindset and build your doc in Vue
+* use the same script tag than SFC 
+
+With layout you can quickly write easy-to-digest documentation by adding navigation, logos, and much more.
