@@ -1,7 +1,7 @@
 ---
 order: 3
 layout: "../../layouts/ItemLayout.astro"
-title: Vue.js design dystems are released with typings
+title: Vue.js design systems are released with typings
 hero_image: "/images/vuejs.jpg"
 cta:
   href: ''
