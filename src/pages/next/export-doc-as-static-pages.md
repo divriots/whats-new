@@ -1,7 +1,7 @@
 ---
 order: 1
 layout: "../../layouts/ItemLayout.astro"
-title: Export doc as static pages
+title: Export doc into static pages
 hero_image: "/images/doc-export.jpg"
 cta:
   href: https://backlight.dev/docs/export-doc
