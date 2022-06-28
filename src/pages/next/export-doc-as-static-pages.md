@@ -8,7 +8,7 @@ cta:
   label: See how
 
 ---
-You can now export your design system documentation into static pages:
+You can now export your design system documentation into static pages for your entire team to consume:
 
 * Single command line
 * High-performance pages
