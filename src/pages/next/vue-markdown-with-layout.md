@@ -2,7 +2,7 @@
 order: 1
 layout: "../../layouts/ItemLayout.astro"
 title: Improved documentation for Vue design systems
-hero_image: "/images/vuejs.jpg"
+hero_image: "/images/vue-doc.jpg"
 cta:
   href: https://backlight.dev/docs/md-vue
   label: Read more
