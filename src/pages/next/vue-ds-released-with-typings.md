@@ -8,5 +8,4 @@ cta:
   label: ''
 
 ---
-
-Vue.js design systems are now released with typings automatically, so they can be consumed by IDEs to provide autocomletion on properties, types, descriptions, and more.
+Vue.js design systems are now released with typings automatically, so they can be consumed by IDEs to provide autocompletion on properties, types, descriptions, and more.

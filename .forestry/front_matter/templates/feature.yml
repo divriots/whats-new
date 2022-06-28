@@ -52,7 +52,4 @@ fields:
   default: "../../layouts/ItemLayout.astro"
 pages:
 - src/pages/next/export-doc-as-static-pages.md
-- src/pages/next/support-for-typings-in-vue.md
-- src/pages/next/support-of-stencil.md
 - src/pages/next/sync-figma-design-tokens-with-the-code-automated.md
-- src/pages/next/vue-markdown-with-layout.md
